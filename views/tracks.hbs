@@ -1,0 +1,19 @@
+<div class='result'>
+    <h2>Album Tracks</h2>
+    <table>
+    <tr>
+        <th>Title</th>
+        <th>Preview</th>
+    </tr>
+    {{#each tracks}}
+    <tr>
+        <td>{{name}}</td>
+        <td>
+            <audio controls>
+            <source src='{{preview_url}}' type='audio/wav'>
+            </audio>
+        </td>
+    </tr>
+    {{/each}}
+    </table>
+</div>

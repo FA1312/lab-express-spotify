@@ -1,0 +1,14 @@
+<div class="result">
+    <h2>All Albums</h2>
+    <div class="list">
+        {{#each album }}
+        <div class="card">
+            <div class="img-box" style="background-image: url({{this.images.[0].url}})"></div>
+            <div class="info-box">
+                <h3> {{ name }} </h3>
+                <a class="btn" href="/tracks/{{id}}">View Tracks</a>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
